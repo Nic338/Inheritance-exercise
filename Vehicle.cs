@@ -18,4 +18,14 @@ namespace Garage
             Console.WriteLine("");
         }
     }
+    public interface IelectricVehicle
+    {
+        void ChargeBattery();
+        int CurrentChargePercentage {get;}
+    }
+    public interface IgasVehicle
+    {
+        void RefuelTank();
+        int CurrentTankPercentage {get;}
+    }
 }
